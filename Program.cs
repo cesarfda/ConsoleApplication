@@ -13,8 +13,8 @@ namespace ConsoleApplication
             var name = "Cesar";
             var location = "Rexburg, ID";
 
-            Console.WriteLine("My name is " + name);
-            Console.WriteLine("I'm from " + location);
+            Console.WriteLine($"My name is {name}");
+            Console.WriteLine($"I'm from {location}");
             var today = DateTime.Now;
             var date = DateTime.Now.ToShortDateString();
             Console.WriteLine("Current date: {0}", date);

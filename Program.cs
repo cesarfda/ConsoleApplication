@@ -13,8 +13,9 @@ namespace ConsoleApplication
             var name = "Cesar";
             var location = "Rexburg, ID";
 
-            Console.WriteLine("My name is: " + name);
-            Console.WriteLine("I'm from: " + location);
+            Console.WriteLine("My name is " + name);
+            Console.WriteLine("I'm from " + location);
+            Console.ReadKey();
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication
 {
+
     class Program
     {
         static void Main(string[] args)
@@ -19,12 +20,27 @@ namespace ConsoleApplication
             var date = DateTime.Now.ToShortDateString();
             Console.WriteLine("Current date: {0}", date);
 
-            DateTime christmas = new DateTime(2020,12,25);
+            DateTime christmas = new DateTime(today.Year,12,25);
             var daysToChristmas = (christmas.Date - today.Date).Days;
 
             Console.WriteLine("Days until christmas from today: {0}", daysToChristmas);
 
+
+            double width, height, woodLength, glassArea;
+            string widthString, heightString;
+            widthString = Console.ReadLine();
+            width = double.Parse(widthString);
+            heightString = Console.ReadLine();
+            height = double.Parse(heightString);
+            woodLength = 2 * (width + height) * 3.25;
+            glassArea = 2 * (width * height);
+            Console.WriteLine("The length of the wood is " +
+            woodLength + " feet");
+            Console.WriteLine("The area of the glass is " +
+            glassArea + " square metres");
+
             Console.ReadKey();
         }
     }
+
 }
